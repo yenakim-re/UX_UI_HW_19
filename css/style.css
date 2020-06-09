@@ -208,14 +208,13 @@ header p {
   transition: opacity 250ms ease-in, transform 400ms ease-in,
     -webkit-transform 400ms ease-in;
   opacity: 0;
-}
+}*/
 .from-left.appear,
 .from-right.appear {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
-}*/
-
+}
 
  /* TESTING FADING */
  .img1.appear, .img2.appear, .img3.appear {
