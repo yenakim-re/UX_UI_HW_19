@@ -76,24 +76,19 @@ header p {
   width: 23%; /*FIX ALL TO PX-DON'T USE PERCENTAGE FOR PADDING/MARGIN*/
   text-align: left;
   float: left;
+  margin: 0;
 }
 .logo img {
   width: 120px;
-  margin-left: 0px;
-  margin-top: 15px;
-  padding-left: 14%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 35px;
 }
 
-/*NAVBAR JQUERY*/
-.buttonResume:hover {
-  border-color: black;
-  border-style: dashed;
-  background: linear-gradient(to right, #FDF7FB 0%, #FDE4F2 3%, #F4E1FB 45%, #E8ECFF 65%, #E6F0FC 80%, #E1F7FE 97%, #F4F9FC 100%);
-  transform: scale(1.1); 
-}
 /* LOGO JQUERY*/
-.logo:hover {
-  transform: scale(1.1); 
+.logo img:hover {
+  transform: scale(1.2); 
 }
 
 /*HERO*/
@@ -120,7 +115,7 @@ header p {
 .content p {
   margin-top: 10px;
 }
-.content button {
+.buttonResume {
   background-color: #f4c2de;
   fill-opacity: inherit;
   padding: 10px 18px;
@@ -130,15 +125,15 @@ header p {
   font-family: monospace;
   font-weight: bold;
   margin: 15px;
+  box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 .bounce {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
-  animation: bounce 4s infinite;
+  animation: bounce 3s infinite;
   text-align: center;
   margin: -10px 0 10px 0;
 }
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -257,15 +252,9 @@ padding: 15px;
   background-color: rgb(228, 235, 236);
   opacity: 0.5;
 }
-.content1:hover {
-  opacity: 1.0;
-}
-.content2:hover {
-  opacity: 1.0;
-}
-.content3:hover {
-  opacity: 1.0;
-}
+
+
+
 .content1 button {
   background-color: #acdfa3;
   padding: 7px 16px;
@@ -300,15 +289,34 @@ padding: 15px;
   box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 
-/*project BUTTON JQUERY*/
+/* RESUME BUTTON HOVER*/
+.buttonResume:hover {
+  border-color: black;
+  border-style: dashed;
+  background: linear-gradient(to right, #FDF7FB 0%, #FDE4F2 3%, #F4E1FB 45%, #E8ECFF 65%, #E6F0FC 80%, #E1F7FE 90%,#F4F9FC 95%, #FFFFFF 100%);
+  transform: scale(1.1); 
+  box-shadow: 0 0px 12px 0 #9b9b9b;
+}
+
+/* CONTENT HOVER */
+.content1:hover {
+  opacity: 1.0;
+}
+.content2:hover {
+  opacity: 1.0;
+}
+.content3:hover {
+  opacity: 1.0;
+}
+
+/* PROJECT BUTTON HOVER */
 .buttonProject:hover {
   border-color: black;
   border-style: dashed;
   background: linear-gradient(to right, #FDF7FB 0%, #FDE4F2 3%, #F4E1FB 45%, #E8ECFF 65%, #E6F0FC 80%, #E1F7FE 97%, #F4F9FC 100%);
   transform: scale(1.1); 
+  box-shadow: 0 0px 12px 0 #9b9b9b;
 }
-
-
 
 
 /*CONTACT INFO*/
@@ -364,6 +372,13 @@ footer p {
   text-size-adjust: smaller;
 }
 
+/* FOOTER ICON HOVER */
+footer img:hover {
+  transform: scale(1.2); 
+ 
+}
+
+
 @media screen and (min-width: 621px) and (max-width:1000px){
  h3 {
    font-size:1em;
@@ -411,6 +426,7 @@ footer p {
   }
   .content button {
     background-color: #f4c2de;
+    box-shadow: 0 0px 12px 0 #363636;
     fill-opacity: inherit;
     padding: 10px 20px;
     border-color: transparent;
@@ -462,6 +478,3 @@ footer p {
   margin: 15px;
 }
 }
-
-
-
