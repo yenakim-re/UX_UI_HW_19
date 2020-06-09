@@ -114,6 +114,7 @@ header p {
 }
 .content p {
   margin-top: 10px;
+  text-align: center;
 }
 .buttonResume {
   background-color: #f4c2de;
@@ -236,19 +237,19 @@ padding: 15px;
 }
 .content1 {
   grid-area: content1;
-  padding: 40px 60px;
+  padding: 50px 65px;
   background-color: #e8f1e5;
   opacity: 0.5;
 }
 .content2 {
   grid-area: content2;
-  padding: 40px 60px;
+  padding: 50px 65px;
   background-color: #efe8f1;
   opacity: 0.5;
 }
 .content3 {
   grid-area: content3;
-  padding: 40px 60px;
+  padding: 50px 65px;
   background-color: rgb(228, 235, 236);
   opacity: 0.5;
 }
@@ -290,7 +291,7 @@ padding: 15px;
 .buttonResume:hover {
   border-color: black;
   border-style: dashed;
-  background: linear-gradient(to right, #FDF7FB 0%, #FDE4F2 3%, #F4E1FB 45%, #E8ECFF 65%, #E6F0FC 80%, #E1F7FE 90%,#F4F9FC 95%, #FFFFFF 100%);
+  background: linear-gradient(to top, #FDF7FB 0%, #FDE4F2 5%, #F4E1FB 30%, #E8ECFF 70%, #E6F0FC 85%, #E1F7FE 100%);
   transform: scale(1.1); 
   box-shadow: 0 0px 12px 0 #9b9b9b;
 }
@@ -310,7 +311,7 @@ padding: 15px;
 .buttonProject:hover {
   border-color: black;
   border-style: dashed;
-  background: linear-gradient(to right, #FDF7FB 0%, #FDE4F2 3%, #F4E1FB 45%, #E8ECFF 65%, #E6F0FC 80%, #E1F7FE 97%, #F4F9FC 100%);
+  background: linear-gradient(to top, #FDF7FB 0%, #FDE4F2 5%, #F4E1FB 30%, #E8ECFF 70%, #E6F0FC 85%, #E1F7FE 100%);
   transform: scale(1.1); 
   box-shadow: 0 0px 12px 0 #9b9b9b;
 }
