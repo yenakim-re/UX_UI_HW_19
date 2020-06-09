@@ -191,17 +191,7 @@ header p {
   padding: 15px;
 }
 
-/* TESTING FADING */
-/*.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-.fade-in.appear {
-  opacity: 1;
-  transform: translateX(0);
-}*/
-
-.from-left {
+/*.from-left {
   grid-column: 2 / 3;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -224,6 +214,18 @@ header p {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+}*/
+
+
+ /* TESTING FADING */
+ .img1.appear, .img2.appear, .img3.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content1.appear, .content2.appear, .content3.appear {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* My Work Section */
@@ -262,10 +264,14 @@ header p {
 .img2 {
   grid-area: img2;
   padding: 50px;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
 }
 .img3 {
   grid-area: img3;
   padding: 50px;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
 }
 .img1 img {
   max-width: 85%;
@@ -287,16 +293,23 @@ header p {
   grid-area: content1;
   padding: 50px 65px;
   background-color: #e8f1e5;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
 }
 .content2 {
   grid-area: content2;
   padding: 50px 65px;
   background-color: #efe8f1;
+  opacity:0;
+  transition: opacity 0.9s ease-in-out;
 }
 .content3 {
   grid-area: content3;
   padding: 50px 65px;
   background-color: rgb(228, 235, 236);
+  opacity:0;
+  transition: opacity 0.9s ease-in-out;
+
 }
 .content1 button {
   background-color: #9cd690;
