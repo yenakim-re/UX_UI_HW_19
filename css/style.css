@@ -299,12 +299,15 @@ padding: 15px;
 /* CONTENT HOVER */
 .content1:hover {
   opacity: 1.0;
+  transform: scale(1.1); 
 }
 .content2:hover {
   opacity: 1.0;
+  transform: scale(1.1); 
 }
 .content3:hover {
   opacity: 1.0;
+  transform: scale(1.1); 
 }
 
 /* PROJECT BUTTON HOVER */
