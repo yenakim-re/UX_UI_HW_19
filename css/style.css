@@ -267,7 +267,7 @@ padding: 15px;
   opacity: 1.0;
 }
 .content1 button {
-  background-color: #c8e5c3;
+  background-color: #acdfa3;
   padding: 7px 16px;
   font-size: large;
   border-color: transparent;
@@ -275,6 +275,7 @@ padding: 15px;
   font-family: monospace;
   font-weight: bold;
   margin-top: 10px;
+  box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 .content2 button {
   background-color: #b89cc2;
@@ -285,6 +286,7 @@ padding: 15px;
   font-family: monospace;
   font-weight: bold;
   margin-top: 10px;
+  box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 .content3 button {
   background-color: rgb(119, 184, 204);
@@ -295,6 +297,7 @@ padding: 15px;
   font-family: monospace;
   font-weight: bold;
   margin-top: 10px;
+  box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 
 /*project BUTTON JQUERY*/
