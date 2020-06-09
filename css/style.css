@@ -190,8 +190,8 @@ padding: 15px;
   background-color: whitesmoke;
 }
 .myWork h1 {
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 .workGrid {
   display: grid;
@@ -252,9 +252,6 @@ padding: 15px;
   background-color: rgb(228, 235, 236);
   opacity: 0.5;
 }
-
-
-
 .content1 button {
   background-color: #acdfa3;
   padding: 7px 16px;
