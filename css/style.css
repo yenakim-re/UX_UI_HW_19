@@ -45,6 +45,7 @@ header {
   background-color: hsla(0, 0%, 100%, 0.877); /* opacity */
   text-align: right;
   position: fixed;
+  z-index:1; /*puts navbar on top*/
 }
 header ul {
   margin-right: auto;
@@ -130,6 +131,23 @@ header p {
   margin: 15px;
   box-shadow: 0 0px 12px 0 #9b9b9b;
 }
+/* RESUME BUTTON HOVER*/
+.buttonResume:hover {
+  border-color: black;
+  border-style: dashed;
+  background: linear-gradient(
+    to top,
+    #fdf7fb 0%,
+    #fde4f2 5%,
+    #f4e1fb 30%,
+    #e8ecff 70%,
+    #e6f0fc 85%,
+    #e1f7fe 100%
+  );
+  transform: scale(1.1); 
+  transition: 0.5s ease;
+  box-shadow: 0 0px 12px 0 #9b9b9b;
+}
 .bounce {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
@@ -160,6 +178,7 @@ header p {
   background-color: white;
   align-items: top;
   justify-content: space-around;
+  
 }
 #uxSkills {
   margin: 50px 100px;
@@ -169,6 +188,14 @@ header p {
 }
 .flexContainer h3 {
   margin-top: 30px;
+}
+.flexContainer p {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.flexContainer.appear p{
+  opacity: 1;
+  transform: translateX(0);
 }
 .flexContainer div {
   padding: 0 15px;
@@ -182,8 +209,8 @@ header p {
 }
 .flexContainer div img {
   width: 100%;
-  max-width: 250px;
-  height: 166px;
+  max-width: 300px;
+  height: 215px;
   margin: 0 auto;
 }
 .flexContainer img {
@@ -256,21 +283,16 @@ header p {
 .img1 {
   grid-area: img1;
   padding: 50px;
-  /*background: linear-gradient(to bottom, whitesmoke 0%, #EDFFEA 100%);*/
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
+ 
 }
 .img2 {
   grid-area: img2;
   padding: 50px;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
 }
 .img3 {
   grid-area: img3;
   padding: 50px;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
+  
 }
 .img1 img {
   max-width: 85%;
@@ -293,25 +315,25 @@ header p {
   padding: 50px 65px;
   background-color: #e8f1e5;
   opacity: 0;
-  transition: opacity 0.9s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 .content2 {
   grid-area: content2;
   padding: 50px 65px;
   background-color: #efe8f1;
   opacity:0;
-  transition: opacity 0.9s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 .content3 {
   grid-area: content3;
   padding: 50px 65px;
   background-color: rgb(228, 235, 236);
   opacity:0;
-  transition: opacity 0.9s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 
 }
 .content1 button {
-  background-color: #9cd690;
+  background-color: #95ca8a;
   padding: 7px 16px;
   font-size: large;
   border-color: transparent;
@@ -344,23 +366,7 @@ header p {
   box-shadow: 0 0px 12px 0 #9b9b9b;
 }
 
-/* RESUME BUTTON HOVER*/
-.buttonResume:hover {
-  border-color: black;
-  border-style: dashed;
-  background: linear-gradient(
-    to top,
-    #fdf7fb 0%,
-    #fde4f2 5%,
-    #f4e1fb 30%,
-    #e8ecff 70%,
-    #e6f0fc 85%,
-    #e1f7fe 100%
-  );
-  transform: scale(1.1);
-  box-shadow: 0 0px 12px 0 #9b9b9b;
-  transition: 0.5s ease;
-}
+
 
 /* CONTENT HOVER 
 .content1:hover {
@@ -397,14 +403,43 @@ header p {
   transition: 0.5s ease;
 }
 
-/*CONTACT INFO*/
-.contactInfo .flexContainer button {
-  background: transparent;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+/* CONTACT FORM */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 
 /*FOOTER*/
 footer {
@@ -463,7 +498,9 @@ footer img:hover {
   p {
     font-size: 0.8em;
   }
-
+  header {
+    z-index:1; /*puts navbar on top*/
+  }
   .flexContainer div {
     min-width: 175px;
   }
@@ -492,6 +529,9 @@ footer img:hover {
     font-family: "Roboto", sans-serif;
     text-align: left;
     font-size: 20px;
+  }
+  header {
+    z-index:1; /*puts navbar on top*/
   }
   .content {
     width: 75%;
@@ -553,4 +593,5 @@ footer img:hover {
     padding: 15px;
     margin: 15px;
   }
+  
 }
