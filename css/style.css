@@ -45,7 +45,7 @@ header {
   background-color: hsla(0, 0%, 100%, 0.877); /* opacity */
   text-align: right;
   position: fixed;
-  z-index:0; /*puts navbar on top*/
+  z-index:1; /*puts navbar on top*/
 }
 header ul {
   margin-right: auto;
@@ -500,7 +500,7 @@ footer img:hover {
     font-size: 0.8em;
   }
   header {
-    z-index:0; /*puts navbar on top*/
+    z-index: inherit 1;; /*puts navbar on top*/
   }
   .flexContainer div {
     min-width: 175px;
@@ -532,7 +532,7 @@ footer img:hover {
     font-size: 20px;
   }
   header {
-    z-index:0; /*puts navbar on top*/
+    z-index:1; /*puts navbar on top*/
   }
   .content {
     width: 75%;
