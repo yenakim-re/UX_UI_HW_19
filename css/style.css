@@ -273,6 +273,7 @@ header p {
     "img3 content3";
   align-items: top;
   padding: 0;
+  z-index: 100;
 }
 .workGrid img {
   width: 100%;
